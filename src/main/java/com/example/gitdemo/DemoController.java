@@ -22,4 +22,9 @@ public class DemoController {
     public ResponseEntity<DemoResponse> helloExtension(){
         return ResponseEntity.ok().body(demoService.helloExtension());
     }
+
+    @GetMapping("hello3")
+    public ResponseEntity<DemoResponse> helloAnotherExtension(){
+        return ResponseEntity.ok().body(demoService.helloAnotherExtension());
+    }
 }

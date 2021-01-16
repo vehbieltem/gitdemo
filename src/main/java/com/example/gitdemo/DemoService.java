@@ -12,4 +12,8 @@ public class DemoService {
     public DemoResponse helloExtension(){
         return new DemoResponse("hello world");
     }
+
+    public DemoResponse helloAnotherExtension(){
+        return new DemoResponse("hello world another");
+    }
 }
