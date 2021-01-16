@@ -8,4 +8,8 @@ public class DemoService {
     public DemoResponse hello(){
         return new DemoResponse("hello");
     }
+
+    public DemoResponse helloExtension(){
+        return new DemoResponse("hello world");
+    }
 }

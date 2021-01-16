@@ -17,4 +17,9 @@ public class DemoController {
     public ResponseEntity<DemoResponse> hello(){
         return ResponseEntity.ok().body(demoService.hello());
     }
+
+    @GetMapping("hello2")
+    public ResponseEntity<DemoResponse> helloExtension(){
+        return ResponseEntity.ok().body(demoService.helloExtension());
+    }
 }
