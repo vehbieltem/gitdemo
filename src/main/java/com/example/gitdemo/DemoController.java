@@ -37,4 +37,9 @@ public class DemoController {
     public ResponseEntity<DemoResponse> helloAgain2(){
         return ResponseEntity.ok().body(demoService.helloAnotherExtension());
     }
+
+    @GetMapping("hello6")
+    public ResponseEntity<DemoResponse> helloAgainConflict(){
+        return ResponseEntity.ok().body(demoService.helloAnotherExtension());
+    }
 }
